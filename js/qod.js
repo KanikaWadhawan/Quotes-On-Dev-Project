@@ -2,9 +2,9 @@
     $(function(){
 
 
-    $('body').append('hello cat world');
-    console.log(qod_api);
-    
+    // $('body').append('hello cat world');
+    // console.log(qod_api);
+
 
 
 });

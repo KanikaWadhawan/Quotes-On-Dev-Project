@@ -57,6 +57,8 @@ add_filter( 'stylesheet_uri', 'qod_minified_css', 10, 2 );
  */
 function qod_scripts() {
 	wp_enqueue_style( 'qod-style', get_stylesheet_uri() );
+
+	wp_enqueue_style('exo-font', "https://fonts.googleapis.com/css?family=Exo:300,300i,500,500i&display=swap");
    
 	wp_enqueue_script('jquery');
 	wp_enqueue_script( 'qod-script', get_template_directory_uri() . '/build/js/qod.min.js', array('jquery'), '', true );
