@@ -96,6 +96,35 @@
         }
     }
 
+    .categories-archives ul{
+
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        li{
+            font-size: 1rem;
+            margin-bottom: .5rem;
+            margin-right: 1.125rem;
+        }
+    }
+
+    .tag-archives .wp-tag-cloud {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        li{
+            font-size: 1rem;
+            margin-bottom: .5rem;
+            margin-right: 1.125rem;
+        }
+    }
+
 
 
 }

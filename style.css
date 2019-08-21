@@ -581,3 +581,31 @@ object {
     font-size: 1rem;
     margin-bottom: .5rem;
     margin-right: 1.125rem; }
+
+.page-id-215 .categories-archives ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .page-id-215 .categories-archives ul li {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    margin-right: 1.125rem; }
+
+.page-id-215 .tag-archives .wp-tag-cloud {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .page-id-215 .tag-archives .wp-tag-cloud li {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    margin-right: 1.125rem; }
