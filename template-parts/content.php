@@ -14,7 +14,7 @@ $source_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', true);
 			<?php the_content();?>
 				</div>
    <div class="entry-meta">
-           <h2 class="entry-title"><?php the_title(); ?><?php if($source && $source_url) : ?><span class="source">, <a href="<?php echo $source_url; ?>"><?php echo $source; ?></a></span>
+           <h2 class="entry-title">-<span class="author"><?php the_title(); ?><span><?php if($source && $source_url) : ?><span class="source">, <a href="<?php echo $source_url; ?>"><?php echo $source; ?></a></span>
            
 		   
 			<?php elseif($source): ?>
