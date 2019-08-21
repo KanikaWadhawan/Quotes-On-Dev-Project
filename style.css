@@ -230,7 +230,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Exo", sans-serif;
   font-size: 1rem;
   line-height: 1.5; }
 
@@ -595,5 +595,5 @@ object {
 /* Submit a Quote Page */
 /* Front Page */
 .home {
-  background-color: black;
-  font-family: 'Exo', sans-serif; }
+  background-color: #222222;
+  font-family: "Exo", sans-serif; }
