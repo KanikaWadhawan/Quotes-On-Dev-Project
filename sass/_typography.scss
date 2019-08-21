@@ -17,12 +17,14 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	font-weight: 500;
 }
 
 /* Copy */
 
 p {
 	margin-bottom: $base__space-unit;
+    
 }
 
 dfn, cite, em, i {
@@ -38,13 +40,13 @@ address {
 }
 
 pre {
-	background: $color__background-pre;
+	// background: $color__background-pre;
 	font-family: $font__pre;
 	font-size: .9375rem;
 	line-height: $font__line-height-pre;
 	margin-bottom: 1.6rem;
 	max-width: 100%;
-	overflow: auto;
+	// overflow: auto;
 	padding: 1.6rem;
 }
 
@@ -65,4 +67,12 @@ mark, ins {
 
 big {
 	font-size: 125%;
+}
+
+.archive .entry-content p, .blog .entry-content p, .single .entry-content p {
+    font-size: 1.25rem;
+}
+
+.archive .entry-meta, .blog .entry-meta, .single .entry-meta {
+    margin-bottom: 3rem;
 }
