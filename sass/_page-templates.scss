@@ -27,6 +27,13 @@
     display: flex;
     flex-wrap: wrap;
 
+    @include tablet{
+        flex: 0 1 auto;
+        align-content: flex-start;
+        margin: 4.5rem 0 3rem;
+
+    }
+
  .main-navigation .menu-main-navigation-container ul {
      list-style: none;
      
@@ -36,6 +43,7 @@
      align-content: flex-end;
      padding-left:0px;
      margin: 1rem 0 0;
+    
   
      li{
          border-right: 1px solid #fff;
@@ -48,13 +56,24 @@
          &:last-child{
              border-right: none;
          }
+        @include tablet{
+         
+            &:last-child{
+                border-right: 1px solid #fff;
+            }
 
+
+        }
          
      }
     
  }
 .site-info{
      margin-top:1.5rem;
+     @include tablet{
+        margin-top:0.7rem;
+        margin-left: 0.8rem;
+    }
  }
 }
 
