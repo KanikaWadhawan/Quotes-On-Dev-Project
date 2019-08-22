@@ -427,6 +427,10 @@ input {
 label {
   display: block; }
 
+.site-main button {
+  display: block;
+  margin: 0 auto; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -517,14 +521,36 @@ a {
 .group-blog .byline {
   display: inline; }
 
-.page-content,
-.entry-content,
-.entry-summary {
-  margin: 1.5rem 0 0; }
-
 .page-links {
   clear: both;
   margin: 0 0 1.5rem; }
+
+.site-content {
+  position: relative; }
+  @media only screen and (min-width: 1080px) {
+    .site-content {
+      width: 700px;
+      margin: 0 auto; }
+      .site-content::before, .site-content::after {
+        font-family: 'fontAwesome';
+        color: #00cc00;
+        font-size: 125px;
+        line-height: 125px;
+        top: 0;
+        position: absolute; }
+      .site-content::after {
+        content: '\f10e';
+        right: -10rem; }
+      .site-content::before {
+        content: '\f10d';
+        left: -10rem; } }
+
+.archive .entry-content p, .blog .entry-content p, .single .entry-content p {
+  font-size: 2.5rem; }
+
+.archive .source, .blog .source, .single .source {
+  font-size: 1.25rem;
+  font-style: italic; }
 
 /*--------------------------------------------------------------
 # Media
@@ -559,6 +585,11 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+  @media only screen and (min-width: 1080px) {
+    .site .qod-logo img {
+      margin: 0 auto;
+      width: 700px;
+      display: block; } }
 
 .site-footer {
   -webkit-box-flex: 1;
@@ -579,6 +610,11 @@ object {
       -ms-flex-line-pack: start;
           align-content: flex-start;
       margin: 4.5rem 0 3rem; } }
+  @media only screen and (min-width: 1080px) {
+    .site-footer {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; } }
   .site-footer .main-navigation .menu-main-navigation-container ul {
     list-style: none;
     display: -webkit-box;

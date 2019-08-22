@@ -16,7 +16,15 @@
     min-height: 100vh;
     display:flex;
     flex-direction: column;
-    
+    @include desktop{
+        // text-align: center;
+
+        .qod-logo img {
+            margin: 0 auto;
+            width: 700px;
+           display:block;
+        }
+    }
 
 }
 
@@ -31,8 +39,14 @@
         flex: 0 1 auto;
         align-content: flex-start;
         margin: 4.5rem 0 3rem;
-
     }
+
+    @include desktop{
+
+        justify-content: flex-end;
+    }
+
+    
 
  .main-navigation .menu-main-navigation-container ul {
      list-style: none;

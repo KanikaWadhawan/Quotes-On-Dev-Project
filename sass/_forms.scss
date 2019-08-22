@@ -98,11 +98,16 @@ input{
 	width: 48%;
 	&[type=submit]{
 	 
-		
+
 		width:auto;
 	}
 }
 
 label{
 	display: block;
+}
+
+.site-main button{
+	display:block;
+	margin:0 auto;
 }

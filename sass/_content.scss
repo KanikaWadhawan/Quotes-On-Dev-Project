@@ -21,14 +21,54 @@
 	display: inline;
 }
 
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: $base__space-unit 0 0;
-}
+// .page-content,
+// .entry-content,
+// .entry-summary {
+// 	margin: $base__space-unit 0 0;
+// }
 
 .page-links {
 	clear: both;
 	margin: 0 0 $base__space-unit;
 }
 
+.site-content{
+	position: relative;
+@include desktop{
+	width:700px;
+	margin: 0 auto;
+&::before, &::after{
+	 font-family: 'fontAwesome';
+	 color:$color__brand;
+	 font-size: 125px;
+     line-height: 125px;
+	 top:0;
+	 position: absolute;
+   }
+
+	&::after{
+    
+		content: '\f10e';
+		right:-10rem;
+		
+	}
+
+      &::before{
+
+	   content: '\f10d';
+	   left:-10rem;
+
+   }
+
+
+}
+}
+
+.archive .entry-content p, .blog .entry-content p, .single .entry-content p {
+    font-size: 2.5rem;
+}
+
+.archive .source, .blog .source, .single .source {
+    font-size: 1.25rem;
+    font-style: italic;
+}
