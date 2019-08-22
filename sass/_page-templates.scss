@@ -28,6 +28,14 @@
 
 }
 
+.qod-logo{
+    margin-top: 2rem;
+
+    @include desktop{
+        margin-top: 3rem;
+    }
+}
+
 .site-footer {
 
     flex: 1 1 auto;
@@ -114,6 +122,10 @@
 
     .qod-logo{
         margin-top: 2rem;
+
+        @include desktop{
+            margin-top: 3rem;
+        }
     }
 
 }
@@ -165,6 +177,8 @@
     }
 
 }
+
+
 
 .archive,
 .search {

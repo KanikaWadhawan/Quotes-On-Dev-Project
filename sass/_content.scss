@@ -63,10 +63,17 @@
 
 }
 }
-
 .archive .entry-content p, .blog .entry-content p, .single .entry-content p {
-    font-size: 2.5rem;
+	font-size: 1.5rem;
+	
+	@include desktop{
+		.archive .entry-content p, .blog .entry-content p, .single .entry-content p {
+			font-size: 2.5rem;
+		}
+	}
 }
+
+
 
 .archive .source, .blog .source, .single .source {
     font-size: 1.25rem;

@@ -546,7 +546,10 @@ a {
         left: -10rem; } }
 
 .archive .entry-content p, .blog .entry-content p, .single .entry-content p {
-  font-size: 2.5rem; }
+  font-size: 1.5rem; }
+  @media only screen and (min-width: 1080px) {
+    .archive .entry-content p .archive .entry-content p, .archive .entry-content p .blog .entry-content p, .archive .entry-content p .single .entry-content p, .blog .entry-content p .archive .entry-content p, .blog .entry-content p .blog .entry-content p, .blog .entry-content p .single .entry-content p, .single .entry-content p .archive .entry-content p, .single .entry-content p .blog .entry-content p, .single .entry-content p .single .entry-content p {
+      font-size: 2.5rem; } }
 
 .archive .source, .blog .source, .single .source {
   font-size: 1.25rem;
@@ -590,6 +593,12 @@ object {
       margin: 0 auto;
       width: 700px;
       display: block; } }
+
+.qod-logo {
+  margin-top: 2rem; }
+  @media only screen and (min-width: 1080px) {
+    .qod-logo {
+      margin-top: 3rem; } }
 
 .site-footer {
   -webkit-box-flex: 1;
@@ -663,6 +672,9 @@ object {
     margin-top: 3rem; }
   .home .qod-logo {
     margin-top: 2rem; }
+    @media only screen and (min-width: 1080px) {
+      .home .qod-logo {
+        margin-top: 3rem; } }
 
 .page-id-215 .post-archives ul {
   list-style: none;
