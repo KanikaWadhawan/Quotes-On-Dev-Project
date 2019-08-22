@@ -93,3 +93,16 @@ fieldset {
     margin: 0;
     padding: 0;
 }
+
+input{
+	width: 48%;
+	&[type=submit]{
+	 
+		
+		width:auto;
+	}
+}
+
+label{
+	display: block;
+}
