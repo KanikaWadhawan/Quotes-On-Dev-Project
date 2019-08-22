@@ -21,12 +21,25 @@ get_header(); ?>
                 <h2>Quote Authors</h2>
                 <ul>
                 
-                    <?php
+                <?php 
+							$query = array(
+								'posts_per_page'=> -1,
+								'orderby'=> array(
+									'post_title'=>'ASC'
+								)
+              );
+              
+							
+							$posts =  get_posts( $query );
 
-                    $posts = get_posts( 'posts_per_page= -1');
-                    foreach( $posts as $post): setup_postdata($post);
-                    ?>
-                     <li><a href="<?php get_permalink(); ?>"><?php the_title();?></a></li>
+							foreach( $posts as $post ) : setup_postdata( $post );
+						?>	
+​	            <li>
+							<a href="<?php the_permalink(); ?>">
+								<?php the_title(); ?>
+							</a>
+						</li>
+​
                     <?php endforeach; wp_reset_postdata(); ?>
               
 
