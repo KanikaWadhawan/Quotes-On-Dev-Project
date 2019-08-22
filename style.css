@@ -368,9 +368,14 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px; }
+  background-color: #222;
+  border: 2px solid #0c0;
+  border-radius: 3px;
+  color: #0c0;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: .75rem 2.25rem; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -389,6 +394,10 @@ input[type="search"] {
 textarea {
   padding-left: 3px;
   width: 100%; }
+
+.quote-submission-wrapper div {
+  padding-bottom: 1rem;
+  line-height: 2rem; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -515,7 +524,14 @@ object {
 /* Front Page */
 .site {
   padding: 0.75rem;
-  min-height: 100vh; }
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 .site-footer {
   -webkit-box-flex: 1;
@@ -543,6 +559,8 @@ object {
       border-right: 1px solid #fff;
       line-height: 1;
       padding: 0 0.5rem; }
+      .site-footer .main-navigation .menu-main-navigation-container ul li:first-child {
+        padding-left: 0; }
       .site-footer .main-navigation .menu-main-navigation-container ul li:last-child {
         border-right: none; }
   .site-footer .site-info {
