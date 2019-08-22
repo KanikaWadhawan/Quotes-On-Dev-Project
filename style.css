@@ -376,13 +376,20 @@ textarea {
   font-weight: 700;
   line-height: 1;
   padding: .75rem 2.25rem; }
-  input[type="text"]:focus,
+  input[type="text"]:focus, input[type="text"]:active,
   input[type="email"]:focus,
+  input[type="email"]:active,
   input[type="url"]:focus,
+  input[type="url"]:active,
   input[type="password"]:focus,
+  input[type="password"]:active,
   input[type="search"]:focus,
-  textarea:focus {
-    color: #111; }
+  input[type="search"]:active,
+  textarea:focus,
+  textarea:active {
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: #222; }
 
 input[type="text"],
 input[type="email"],
@@ -417,18 +424,17 @@ fieldset {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: #0c0;
+  color: #00cc00;
   text-decoration: none; }
   a:visited {
-    color: #0c0; }
+    color: #00cc00; }
   a:hover, a:focus, a:active {
-    color: #0c0; }
+    color: #009900; }
   a:focus {
-    outline: thin dotted; }
+    outline: none; }
   a:hover, a:active {
     outline: 0; }
 
-/* Menus */
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
