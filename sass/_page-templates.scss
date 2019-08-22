@@ -131,6 +131,20 @@
         }
     }
 
+}
+
+.archive,
+.search {
+	.page-title {
+		border-bottom: $base__border;
+		margin-top: $base__space-unit * 2;
+		padding-bottom: $base__space-unit;
+	}
+}
 
 
+.archive {
+	.hentry {
+		border-bottom: $base__border;
+	}
 }

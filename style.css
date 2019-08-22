@@ -627,3 +627,12 @@ object {
     font-size: 1rem;
     margin-bottom: .5rem;
     margin-right: 1.125rem; }
+
+.archive .page-title,
+.search .page-title {
+  border-bottom: 1px dotted #fff;
+  margin-top: 3rem;
+  padding-bottom: 1.5rem; }
+
+.archive .hentry {
+  border-bottom: 1px dotted #fff; }
