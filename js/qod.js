@@ -22,7 +22,6 @@
             
             const post =data[0];
 
-            //  $('.entry-content').html();
             const $element = $('.entry-content');
             const $content = post .content.rendered;
             const $title = $('.entry-title');

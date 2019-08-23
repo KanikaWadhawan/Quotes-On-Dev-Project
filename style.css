@@ -594,7 +594,7 @@ object {
   @media only screen and (min-width: 1080px) {
     .site .qod-logo img {
       margin: 0 auto;
-      width: 700px;
+      width: 43.750em;
       display: block; } }
 
 .qod-logo {
