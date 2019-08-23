@@ -63,6 +63,38 @@
  });
 
            // Post request for wp/v2/posts
+           
+        // 2. Post request for wp/v2/posts
+        $('#quote-submission-form').on('submit', function(event){
+            event.preventDefault();
+​
+            let $valAuthor = $('#quote-author').val().trim().length < 1 ? null:$('#quote-author').val(),
+                $valContent = $('#quote-content').val().trim().length < 1 ? null:$('#quote-content').val(),
+                $valSource = $('#quote-source').val().trim().length < 1 ? null:$('#quote-source').val(),
+                $valUrl = $('#quote-source-url').val().trim().length < 1 ? null:$('#quote-source-url').val();
+​
+            $.ajax({
+                method: 'post',
+                url: qod_api.rest_url + 'wp/v2/posts',
+                data: {
+                    'title': $valAuthor,
+                    'content': $valContent,
+                    '_qod_quote_source':$valSource,
+                    '_qod_quote_source_url':$valUrl
+                },
+                beforeSend: function(xhr) {
+                    xhr.setRequestHeader( 'X-WP-Nonce', qod_api.wpapi_nonce );
+                }
+            })
+            .fail(function(err){
+                console.log(err);
+            })
+            .done(function(){
+                $('.quote-submission-wrapper').html('Thanks, your quote submission was received!');
+            });
+        });
+  
+​
 
 });
 
