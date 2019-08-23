@@ -580,6 +580,9 @@ object {
 /* Front Page */
 .site {
   padding: 0.75rem;
+  margin: 0 auto;
+  max-width: 1080px;
+  width: 100%;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
