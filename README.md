@@ -93,7 +93,12 @@ And now would be a good time to `git init` :)
   
    ### Submission Page
   ![Submission Page](images/submit.png)
+   
+   ### 404 Page
+  ![404 Page](images/404.png)
 
+   ### Search Page
+  ![Search Page](images/searchpage.png)
   
   #Learnings and Sample Codes
 
