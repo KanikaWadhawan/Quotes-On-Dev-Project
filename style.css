@@ -352,10 +352,10 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  background-color: #222;
-  border: 2px solid #0c0;
+  background-color: #222222;
+  border: 2px solid #00cc00;
   border-radius: 3px;
-  color: #0c0;
+  color: #00cc00;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1;
@@ -368,10 +368,10 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  background-color: #222;
-  border: 2px solid #0c0;
+  background-color: #222222;
+  border: 2px solid #00cc00;
   border-radius: 3px;
-  color: #0c0;
+  color: #00cc00;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1;
@@ -389,7 +389,7 @@ textarea {
   textarea:active {
     color: #fff;
     border: 2px solid #fff;
-    background-color: #222; }
+    background-color: #222222; }
 
 input[type="text"],
 input[type="email"],
